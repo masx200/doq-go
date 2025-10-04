@@ -11,11 +11,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/masx200/doq-go/doq"
 	"github.com/miekg/dns"
 	"github.com/quic-go/quic-go"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/tantalor93/doq-go/doq"
 )
 
 type doqServer struct {

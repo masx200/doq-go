@@ -1,4 +1,4 @@
-module github.com/tantalor93/doq-go
+module github.com/masx200/doq-go
 
 go 1.24
 

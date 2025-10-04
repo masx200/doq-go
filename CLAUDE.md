@@ -40,7 +40,7 @@ go fmt ./...                        # Format code
 ```bash
 go mod tidy                         # Clean up dependencies
 go mod download                     # Download dependencies
-go get github.com/tantalor93/doq-go # Install as dependency
+go get github.com/masx200/doq-go # Install as dependency
 ```
 
 ## Architecture
@@ -50,11 +50,13 @@ The codebase follows a simple, focused architecture:
 ### Core Components
 
 - **`doq/client.go`**: Main Client struct that encapsulates DoQ logic
+
   - Thread-safe client with connection pooling
   - Handles QUIC connection management and stream multiplexing
   - Implements connection retry logic with health checking
 
 - **`doq/opts.go`**: Configuration options using functional options pattern
+
   - `WithTLSConfig()`: Custom TLS configuration
   - `WithWriteTimeout()`: Write timeout configuration
   - `WithReadTimeout()`: Read timeout configuration
