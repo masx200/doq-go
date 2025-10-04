@@ -3,7 +3,7 @@ module github.com/masx200/doq-go
 go 1.24
 
 require (
-	github.com/miekg/dns v1.1.59
+	github.com/miekg/dns v1.1.68
 	github.com/quic-go/quic-go v0.55.0
 	github.com/stretchr/testify v1.9.0
 )
